@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="Trivia" customModuleProvider="target">
+            <connections>
+                <outlet property="userTextField" destination="4lp-mB-NbG" id="pPO-R1-QXz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alkemy Trivia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoG-0K-1FR">
+                    <rect key="frame" x="20" y="256" width="374" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fip-vP-pHJ">
+                    <rect key="frame" x="20" y="344" width="374" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-g4-4aP">
+                    <rect key="frame" x="40" y="732" width="334" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="POu-yY-Xbd"/>
+                    </constraints>
+                    <color key="tintColor" red="0.84313726430000002" green="0.23921570180000001" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Empezar"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alkemy-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qqC-vM-lJW">
+                    <rect key="frame" x="141" y="94" width="132" height="132"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="132" id="Mj2-IH-lTz"/>
+                        <constraint firstAttribute="width" constant="132" id="XpM-eP-dTg"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-mB-NbG" userLabel="User text field">
+                    <rect key="frame" x="20" y="381" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="F5B-HQ-bC2"/>
+            <color key="backgroundColor" red="0.90196073060000004" green="0.95686274770000002" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="F5B-HQ-bC2" firstAttribute="trailing" secondItem="QoG-0K-1FR" secondAttribute="trailing" constant="20" id="14W-s4-0jW"/>
+                <constraint firstItem="QoG-0K-1FR" firstAttribute="top" secondItem="qqC-vM-lJW" secondAttribute="bottom" constant="30" id="64e-BH-MDu"/>
+                <constraint firstItem="4lp-mB-NbG" firstAttribute="top" secondItem="fip-vP-pHJ" secondAttribute="bottom" constant="10" id="8h3-ht-Nwm"/>
+                <constraint firstItem="fip-vP-pHJ" firstAttribute="top" secondItem="QoG-0K-1FR" secondAttribute="bottom" constant="40" id="BBg-xG-QdI"/>
+                <constraint firstItem="QoG-0K-1FR" firstAttribute="leading" secondItem="F5B-HQ-bC2" secondAttribute="leading" constant="20" id="C9o-Tb-ee9"/>
+                <constraint firstItem="fip-vP-pHJ" firstAttribute="leading" secondItem="F5B-HQ-bC2" secondAttribute="leading" constant="20" id="JrP-d8-VEW"/>
+                <constraint firstItem="F5B-HQ-bC2" firstAttribute="trailing" secondItem="fip-vP-pHJ" secondAttribute="trailing" constant="20" id="MzM-ao-XfM"/>
+                <constraint firstItem="F5B-HQ-bC2" firstAttribute="bottom" secondItem="f6d-g4-4aP" secondAttribute="bottom" constant="80" id="Wpt-eM-TWs"/>
+                <constraint firstItem="f6d-g4-4aP" firstAttribute="leading" secondItem="F5B-HQ-bC2" secondAttribute="leading" constant="40" id="guZ-oD-ci1"/>
+                <constraint firstItem="F5B-HQ-bC2" firstAttribute="trailing" secondItem="4lp-mB-NbG" secondAttribute="trailing" constant="20" id="nux-TU-eMv"/>
+                <constraint firstItem="qqC-vM-lJW" firstAttribute="top" secondItem="F5B-HQ-bC2" secondAttribute="top" constant="50" id="sI3-ay-eCQ"/>
+                <constraint firstItem="qqC-vM-lJW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wBS-8B-1TG"/>
+                <constraint firstItem="4lp-mB-NbG" firstAttribute="leading" secondItem="F5B-HQ-bC2" secondAttribute="leading" constant="20" id="xLV-5H-qds"/>
+                <constraint firstItem="F5B-HQ-bC2" firstAttribute="trailing" secondItem="f6d-g4-4aP" secondAttribute="trailing" constant="40" id="xsy-k9-S3A"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alkemy-logo" width="200" height="200"/>
+    </resources>
+</document>
